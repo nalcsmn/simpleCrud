@@ -1,12 +1,12 @@
 @extends('details.layout')
 
 @section('content')
-
+<div class="container">
 	<dic class="row">
 	
 	<div class="col-lg-12 margin-tb">
 	<div class="pull-left">
-	<h2>Edit Product</h2>
+	<h2 style="padding:20px">Edit Product</h2>
 
 </div>
 <div class="pull-right">
@@ -41,7 +41,7 @@
 	<div class="col-xs-12 col-sm-12 col-md-12">
 	<div class="form-group">
 
-	<strong>StudName:</strong>
+	<strong>Name:</strong>
 
 	<input type="text" name="name" value="{{ $detail->name }}"
 
@@ -53,7 +53,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12">
 
 	<div class="form-group">
-	<strong>Course:</strong>
+	<strong>Address</strong>
 
 	<input type="text" name="age" value="{{ $detail->address }}"
 class="form-control" placeholder="address">
@@ -65,7 +65,7 @@ class="form-control" placeholder="address">
 <div class="col=xs=12 col-sm-12 col-md-12">
 	
 	<div class="form-group">
-	<strong>Fee</strong>
+	<strong>Age</strong>
 	<input type="text" name="fee" value="{{ $detail->age }}" class="form-control" placeholder="age">
 </div>
 </div>
@@ -77,5 +77,5 @@ class="form-control" placeholder="address">
 </div>
 
 </form>
-
+</div>
 @endsection
